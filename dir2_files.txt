@@ -1,0 +1,12 @@
+report1.pdf
+document.docx
+image1.jpg
+image2.jpg
+notes.txt
+config.xml
+data.csv
+newscript.sh
+presentation.pptx
+archive.zip
+readme.md
+todo.txt
