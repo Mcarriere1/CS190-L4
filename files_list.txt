@@ -1,0 +1,9 @@
+README.md
+command_logs
+dir1_files.txt
+dir2_files.txt
+files_list.txt
+numbers.txt
+server.log
+unsorted_data.txt
+users.txt

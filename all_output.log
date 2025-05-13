@@ -1,0 +1,4 @@
+2025-04-01 08:45:23 [ERROR] Failed to process payment for order #12345
+2025-04-01 09:15:42 [ERROR] Database query timeout after 30 seconds
+2025-04-01 10:30:42 [ERROR] Failed to connect to API endpoint: timeout
+2025-04-01 13:30:42 [ERROR] Update failed: package conflicts detected

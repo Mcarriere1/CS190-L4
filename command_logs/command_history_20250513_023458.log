@@ -1,0 +1,60 @@
+[2025-05-13 02:34:58] [/workspaces/CS190-L4] source .devcontainer/shell.sh
+[2025-05-13 02:36:55] [/workspaces/CS190-L4] ls non_existent_dir 2> errors.log
+[2025-05-13 02:37:09] [/workspaces/CS190-L4] find ~ -name "*.txt" > found_files.txt 2> find_errors.log
+[2025-05-13 02:37:28] [/workspaces/CS190-L4] find ~ -name "*.txt" > found_files.txt 2> find_errors.log
+[2025-05-13 02:37:42] [/workspaces/CS190-L4] grep "ERROR" server.log &> all_output.log
+[2025-05-13 02:38:12] [/workspaces/CS190-L4] cat does_not_exist.txt 2> /dev/null
+[2025-05-13 02:38:20] [/workspaces/CS190-L4] ls existing_file.txt non_existent.txt > command_output.txt 2> command_errors.txt
+[2025-05-13 02:38:28] [/workspaces/CS190-L4] cat server.log | wc -l
+[2025-05-13 02:38:38] [/workspaces/CS190-L4] cat server.log | wc -l
+[2025-05-13 02:38:50] [/workspaces/CS190-L4] ls | grep "\.txt$"
+[2025-05-13 02:38:54] [/workspaces/CS190-L4] sort unsorted_data.txt | uniq
+[2025-05-13 02:39:02] [/workspaces/CS190-L4] grep "ERROR" server.log | wc -l
+[2025-05-13 02:39:07] [/workspaces/CS190-L4] cut -d':' -f1 users.txt | sort
+[2025-05-13 02:39:11] [/workspaces/CS190-L4] cut -d':' -f3 users.txt | sort | uniq -c
+[2025-05-13 02:39:23] [/workspaces/CS190-L4] cut -d':' -f3 users.txt | sort | uniq -c
+[2025-05-13 02:39:37] [/workspaces/CS190-L4] ls -lS | grep '^-' | head -n 3
+[2025-05-13 02:39:47] [/workspaces/CS190-L4] grep -E ' [1][0-1]:| 12:' server.log
+[2025-05-13 02:40:54] [/workspaces/CS190-L4] cat << EOF > introduction.txt
+Welcome to the Introduction.
+This file was created using a here document.
+Enjoy learning Linux!
+EOF
+[2025-05-13 02:41:14] [/workspaces/CS190-L4] grep -E 'ERROR|WARNING' server.log
+[2025-05-13 02:41:14] [/workspaces/CS190-L4] # Or, if using patterns from a here document:
+[2025-05-13 02:41:14] [/workspaces/CS190-L4] grep -f - server.log << EOF
+ERROR
+WARNING
+EOF
+[2025-05-13 02:41:17] [/workspaces/CS190-L4] grep -E 'ERROR|WARNING' server.log
+[2025-05-13 02:41:17] [/workspaces/CS190-L4] # Or, if using patterns from a here document:
+[2025-05-13 02:41:17] [/workspaces/CS190-L4] grep -f - server.log << EOF
+ERROR
+WARNING
+EOF
+[2025-05-13 02:41:28] [/workspaces/CS190-L4] cat << EOF > simple.html
+<html>
+<head><title>Simple Page</title></head>
+<body><h1>Hello, World!</h1></body>
+</html>
+EOF
+[2025-05-13 02:41:47] [/workspaces/CS190-L4] sed -e 's/old1/new1/g' -e 's/old2/new2/g' users.txt > users_modified.txt
+[2025-05-13 02:41:56] [/workspaces/CS190-L4] echo "
+SELECT * FROM users;
+SELECT COUNT(*) FROM users;
+" > commands.sql
+[2025-05-13 02:42:08] [/workspaces/CS190-L4] wc -c <<< "Linux is an open-source operating system"
+[2025-05-13 02:42:11] [/workspaces/CS190-L4] grep "apple" <<< "apple orange banana"
+[2025-05-13 02:42:14] [/workspaces/CS190-L4] tr '[:lower:]' '[:upper:]' <<< "linux is great"
+[2025-05-13 02:42:16] [/workspaces/CS190-L4] grep "192.168.1.1" server.log
+[2025-05-13 02:42:20] [/workspaces/CS190-L4] tr ',' '\n' <<< "3,1,4,1,5,9,2,6" | sort -n
+[2025-05-13 02:42:48] [/workspaces/CS190-L4] diff <(cat dir1_files.txt) <(cat dir2_files.txt)
+[2025-05-13 02:42:51] [/workspaces/CS190-L4] comm -12 <(sort dir1_files.txt) <(sort dir2_files.txt)
+[2025-05-13 02:42:55] [/workspaces/CS190-L4] paste <(sort numbers.txt) <(tr '[:lower:]' '[:upper:]' < numbers.txt)
+[2025-05-13 02:43:14] [/workspaces/CS190-L4] diff <(cat unsorted_data.txt) <(sort unsorted_data.txt)
+[2025-05-13 02:43:46] [/workspaces/CS190-L4] sed 's/company\.com/newcompany.com/g' <(cat users.txt) > users_backup.txt
+[2025-05-13 02:44:09] [/workspaces/CS190-L4] grep -E '\[ERROR\]|\[WARNING\]' server.log | sort > error_warning_report.txt
+[2025-05-13 02:44:12] [/workspaces/CS190-L4] grep -o '[A-Za-z0-9._%+-]\+@[A-Za-z0-9.-]\+\.[A-Za-z]\+' users.txt | sort | uniq > emails.txt
+[2025-05-13 02:44:15] [/workspaces/CS190-L4] grep -o '\[INFO\]\|\[ERROR\]\|\[WARNING\]' server.log | sort | uniq -c > loglevel_summary.txt
+[2025-05-13 02:44:17] [/workspaces/CS190-L4] comm -3 <(sort dir1_files.txt) <(sort dir2_files.txt)
+[2025-05-13 02:44:20] [/workspaces/CS190-L4] grep "logged in" server.log | awk '{print $NF, $(NF-2)}' > login_users_times.txt

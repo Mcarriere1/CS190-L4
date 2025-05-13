@@ -1,0 +1,8 @@
+[2025-05-06 23:23:36] [/workspaces/CS190-L4] source .devcontainer/shell.sh
+[2025-05-06 23:26:31] [/workspaces/CS190-L4] ls > files_list.txt
+[2025-05-06 23:26:39] [/workspaces/CS190-L4] cat numbers.txt > numbers_copy.txt
+[2025-05-06 23:27:00] [/workspaces/CS190-L4] echo "This is a new line" >> numbers_copy.txt
+[2025-05-06 23:28:32] [/workspaces/CS190-L4] echo -e "\nThis is a new line" >> numbers_copy.txt
+[2025-05-06 23:29:01] [/workspaces/CS190-L4] ls -la > directory_info.txt
+[2025-05-06 23:29:16] [/workspaces/CS190-L4] date > timestamp.txt
+[2025-05-06 23:29:40] [/workspaces/CS190-L4] find ~ -name "*.txt" > found_files.txt 2> find_errors.log

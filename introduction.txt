@@ -1,0 +1,3 @@
+Welcome to the Introduction.
+This file was created using a here document.
+Enjoy learning Linux!

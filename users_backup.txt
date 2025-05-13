@@ -1,0 +1,11 @@
+username,role,department,email
+admin,Administrator,IT,admin@newcompany.com
+jack.smith,Developer,Engineering,jack.smith@newcompany.com
+emma.jones,Manager,Marketing,emma.jones@newcompany.com
+david.wilson,Analyst,Finance,david.wilson@newcompany.com
+sarah.brown,Designer,Marketing,sarah.brown@newcompany.com
+michael.taylor,Developer,Engineering,michael.taylor@newcompany.com
+lisa.white,Manager,Sales,lisa.white@newcompany.com
+robert.clark,Analyst,Finance,robert.clark@newcompany.com
+jennifer.lee,Designer,Marketing,jennifer.lee@newcompany.com
+william.davis,Developer,Engineering,william.davis@newcompany.com

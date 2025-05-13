@@ -1,0 +1,16 @@
+total 60
+drwxrwxrwx+ 5 codespace root      4096 May  6 23:29 .
+drwxr-xrwx+ 5 codespace root      4096 May  6 04:02 ..
+drwxrwxrwx+ 2 codespace root      4096 May  6 04:02 .devcontainer
+drwxrwxrwx+ 9 codespace root      4096 May  6 04:03 .git
+-rw-rw-rw-  1 codespace root      4241 May  6 04:02 README.md
+drwxrwxrwx+ 2 codespace codespace 4096 May  6 23:23 command_logs
+-rw-rw-rw-  1 codespace root       115 May  6 04:02 dir1_files.txt
+-rw-rw-rw-  1 codespace root       139 May  6 04:02 dir2_files.txt
+-rw-rw-rw-  1 codespace codespace    0 May  6 23:29 directory_info.txt
+-rw-rw-rw-  1 codespace codespace  119 May  6 23:26 files_list.txt
+-rw-rw-rw-  1 codespace root        42 May  6 04:02 numbers.txt
+-rw-rw-rw-  1 codespace codespace   62 May  6 23:28 numbers_copy.txt
+-rw-rw-rw-  1 codespace root      1696 May  6 04:02 server.log
+-rw-rw-rw-  1 codespace root       124 May  6 04:02 unsorted_data.txt
+-rw-rw-rw-  1 codespace root       573 May  6 04:02 users.txt
